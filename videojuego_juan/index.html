@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Evasión de Obstáculos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Juego de Evasión</h1>
+        <div class="game-info">
+            <p>Puntuación: <span id="score">0</span></p>
+            <p>Record: <span id="high-score">0</span></p>
+            <p>Nivel: <span id="level">1 (Fácil)</span></p>
+        </div>
+        <div id="game-board"></div>
+        <div class="controls">
+            <div class="difficulty-buttons">
+                <button id="easy-btn" class="active">Fácil</button>
+                <button id="medium-btn">Medio</button>
+                <button id="hard-btn">Difícil</button>
+            </div>
+            <button id="start-btn">Iniciar Juego</button>
+            <p>Usa las flechas del teclado para moverte</p>
+        </div>
+        <div id="game-over" class="hidden">
+            <h2>¡Game Over!</h2>
+            <p>Chocaste con un obstáculo</p>
+            <p>Puntuación final: <span id="final-score">0</span></p>
+            <button id="restart-btn">Reintentar</button>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
